@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{134E635B-8250-4055-B572-3CAC91551A7C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GiaoDien</RootNamespace>
+    <AssemblyName>GiaoDien</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Long Chau Pharmacy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\Long Chau Pharmacy.Designer.cs">
+      <DependentUpon>Long Chau Pharmacy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAccountProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAccountProfile.Designer.cs">
+      <DependentUpon>fAccountProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fHoa_Don.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fHoa_Don.Designer.cs">
+      <DependentUpon>fHoa_Don.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fKhach_hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fKhach_hang.Designer.cs">
+      <DependentUpon>fKhach_hang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fKho_Luu_Tru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fKho_Luu_Tru.Designer.cs">
+      <DependentUpon>fKho_Luu_Tru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLoai_Thuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLoai_Thuoc.Designer.cs">
+      <DependentUpon>fLoai_Thuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fNha_Cung_Cap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fNha_Cung_Cap.Designer.cs">
+      <DependentUpon>fNha_Cung_Cap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fPharmacy_Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPharmacy_Manager.Designer.cs">
+      <DependentUpon>fPharmacy_Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fPhieu_Nhap_Hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPhieu_Nhap_Hang.Designer.cs">
+      <DependentUpon>fPhieu_Nhap_Hang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fQuan_Ly_Tai_Khoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fQuan_Ly_Tai_Khoan.Designer.cs">
+      <DependentUpon>fQuan_Ly_Tai_Khoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fThuoc.Designer.cs">
+      <DependentUpon>fThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="..\..\Long Chau Pharmacy.resx">
+      <DependentUpon>Long Chau Pharmacy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAccountProfile.resx">
+      <DependentUpon>fAccountProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fHoa_Don.resx">
+      <DependentUpon>fHoa_Don.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fKhach_hang.resx">
+      <DependentUpon>fKhach_hang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fKho_Luu_Tru.resx">
+      <DependentUpon>fKho_Luu_Tru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLoai_Thuoc.resx">
+      <DependentUpon>fLoai_Thuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fNha_Cung_Cap.resx">
+      <DependentUpon>fNha_Cung_Cap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPharmacy_Manager.resx">
+      <DependentUpon>fPharmacy_Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPhieu_Nhap_Hang.resx">
+      <DependentUpon>fPhieu_Nhap_Hang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fQuan_Ly_Tai_Khoan.resx">
+      <DependentUpon>fQuan_Ly_Tai_Khoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fThuoc.resx">
+      <DependentUpon>fThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z3604266535683_2c01466982c258d09b25821b5b6db6c9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z3604269105478_d019b1827b2c5122aff50fe1162dfdd6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z3604289217016_e0b38c6cc0134b968eb1e3cdebc4ffe4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z3604314245740_6c741f06afe5d4c6910203a065cf4cb5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z3604271568245_5f619985d8e284ef329b0dca51d0d93e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z3604321420954_4d59d227f161c77488439e99d996f841.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kho.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z3604438016967_af65e36700794a8ed363fc71733109c4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anh-background-nha-khoa-y-te_034616005.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anh-dep-background-y-te_034616271.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradient.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
